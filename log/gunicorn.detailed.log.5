@@ -1,0 +1,97 @@
+[2024-04-18 21:14:27,492] ERROR log_exception() L838  Exception on /reserva [DELETE] - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py L838 
+Traceback (most recent call last):
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\Documents\GitHub\Engenharia de Software PUC\1 modulo projeto\meu_app_api\app.py", line 123, in del_reserva
+    reserva_dataReserva = unquote(unquote(query.dataReserva))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\urllib\parse.py", line 684, in unquote
+    if '%' not in string:
+       ^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'datetime.date' is not iterable
+[2024-04-18 21:14:27,505] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 21:14:27] "[35m[1mDELETE /reserva?dataReserva=2024-04-30 HTTP/1.1[0m" 500 - - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 21:14:29,070] ERROR log_exception() L838  Exception on /reserva [DELETE] - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py L838 
+Traceback (most recent call last):
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\Documents\GitHub\Engenharia de Software PUC\1 modulo projeto\meu_app_api\app.py", line 123, in del_reserva
+    reserva_dataReserva = unquote(unquote(query.dataReserva))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\urllib\parse.py", line 684, in unquote
+    if '%' not in string:
+       ^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'datetime.date' is not iterable
+[2024-04-18 21:14:29,074] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 21:14:29] "[35m[1mDELETE /reserva?dataReserva=2024-04-30 HTTP/1.1[0m" 500 - - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 21:14:29,701] ERROR log_exception() L838  Exception on /reserva [DELETE] - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py L838 
+Traceback (most recent call last):
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_openapi3\scaffold.py", line 117, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\Documents\GitHub\Engenharia de Software PUC\1 modulo projeto\meu_app_api\app.py", line 123, in del_reserva
+    reserva_dataReserva = unquote(unquote(query.dataReserva))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\urllib\parse.py", line 684, in unquote
+    if '%' not in string:
+       ^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'datetime.date' is not iterable
+[2024-04-18 21:14:29,704] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 21:14:29] "[35m[1mDELETE /reserva?dataReserva=2024-04-30 HTTP/1.1[0m" 500 - - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 21:45:25,222] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.116:5000 - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 21:45:25,223] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 21:45:31,916] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 21:45:31] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 21:45:31,926] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 21:45:31] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 21:45:32,006] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 21:45:32] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 21:45:32,014] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 21:45:32] "[36mGET /openapi/static/images/redoc.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 21:45:32,062] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 21:45:32] "[36mGET /openapi/static/images/rapidoc.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 21:45:32,072] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 21:45:32] "[36mGET /openapi/static/images/apidoc.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 21:45:33,101] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 21:45:33] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-04-18 21:45:33,140] INFO _log() L96   127.0.0.1 - - [18/Apr/2024 21:45:33] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\anton\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
